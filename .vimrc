@@ -1,3 +1,6 @@
+set encoding=utf-8
+set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+set fileformats=unix,dos,mac
 scriptencoding utf-8
 
 "---------------------------------------------------------------------------
@@ -12,6 +15,7 @@ set noexpandtab
 set autoindent
 " かしこいインデント
 set smartindent
+set paste
 
 "---------------------------------------------------------------------------
 " GUI固有ではない画面表示の設定:
@@ -27,7 +31,7 @@ set listchars=tab:>-,trail:-,eol:<,extends:<,precedes:<,nbsp:%
 " 長い行を折り返して表示 (nowrap:折り返さない)
 set nowrap
 " カラースキームの設定
-colorscheme monokai
+colorscheme molokai
 " カーソル業の強調
 set cursorline
 " ターミナルのタイトル表示
@@ -50,7 +54,7 @@ set nowrapscan
 
 
 " 開いてるファイルのディレクトリにカレントディレクトリを変更する
-set autochdir
+"set autochdir
 
 " ステータスライン表示設定
 " 0: 表示しない
@@ -62,4 +66,9 @@ set statusline=%F%r%h%=%l/%L,%c/%V%8p%%
 set wildmenu
 set wildmode=list:full
 
+set grepprg=git\ grep
 
+set tags=tags:~
+
+nnoremap <C-]> g<C-]>
+inoremap <C-]> <ESC>g<C-]>
