@@ -5,14 +5,16 @@ scriptencoding utf-8
 syntax enable
 set background=dark
 "colorscheme solarized
-colorscheme monokai
+colorscheme molokai
 
 "---------------------------------------------------------------------------
 " フォント設定:
 "
 if has('win32')
   " Windows用
-  set guifont=Migu_1M:h12:cSHIFTJIS
+  " set guifont=Migu_1M:h12:cSHIFTJIS
+  set guifont=HackGen\ Console:h10:cSHIFTJIS
+  set guifontwide=HackGen\ Console":h10
   "set guifont=MS_Mincho:h12:cSHIFTJIS
   " 行間隔の設定
   set linespace=1

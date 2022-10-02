@@ -1,6 +1,6 @@
-mklink %HOMEPATH%"\.vimrc" %DOTFILEPATH%"\.vimrc"
-mklink %HOMEPATH%"\.gvimrc" %DOTFILEPATH%"\.gvimrc"
-mklink /D %HOMEPATH%"\.vim\colors" %DOTFILEPATH%"\colors"
-mklink /D %HOMEPATH%"\.vim\autoload" %DOTFILEPATH%"\autoload"
-mklink /D %HOMEPATH%"\.vim\bitmaps" %DOTFILEPATH%"\bitmaps"
+mklink %HOMEPATH%"\.vimrc" %~dp0"\.vimrc"
+mklink %HOMEPATH%"\.gvimrc" %~dp0"\.gvimrc"
+REM mklink /D %HOMEPATH%"\.vim\colors" %~dp0"\colors"
+REM mklink /D %HOMEPATH%"\.vim\autoload" %~dp0"\autoload"
+REM mklink /D %HOMEPATH%"\.vim\bitmaps" %~dp0"\bitmaps"
 exit 0

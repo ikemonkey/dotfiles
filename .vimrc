@@ -16,6 +16,8 @@ set autoindent
 " かしこいインデント
 set smartindent
 set paste
+" クリップボードを使用する
+set clipboard=unnamed,autoselect
 
 "---------------------------------------------------------------------------
 " GUI固有ではない画面表示の設定:
